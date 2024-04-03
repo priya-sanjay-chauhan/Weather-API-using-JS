@@ -1,0 +1,62 @@
+
+.main{
+    border:2px solid rgb(230, 228, 228);
+    width: 500px;
+    height: 500px;
+    margin:50px auto;
+    border-radius: 30px;
+    box-shadow: -1px -1px 10px 10px rgb(163, 225, 253);
+    /* background-color: rgb(92, 92, 92); */
+}
+
+.search{
+    /* border: 2px solid red; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px;
+    
+}
+
+input{
+    margin: 10px 20px;
+    width: 300px;
+    padding: 10px;
+}
+
+button{
+    padding: 10px 40px;
+    background-color: rgb(109, 224, 224);
+}
+
+.display-box{
+    /* border: 2px solid rgb(0, 0, 0); */
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    
+
+}
+.icon{
+    margin-top: 20px;
+}
+
+.weather{
+    font-size: 35px;
+    margin-top: 20px;
+    font-weight: 600;
+    
+}
+
+.temperature{
+    font-size: 30px;
+    margin: 10px;
+}
+
+.description{
+    font-size: 26px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: 400;
+}

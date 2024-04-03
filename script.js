@@ -7,6 +7,14 @@ let icon=document.querySelector(".icon");
 let weather=document.querySelector(".weather");
 let temp=document.querySelector(".temperature");
 let desc=document.querySelector(".description");
+let wind=document.querySelector(".wind");
+
+document.addEventListener('keypress', function(e) {
+    if (e.key === 'Enter') {
+        btn.click();
+    }
+});
+
 
 btn.addEventListener("click",async function(){
 
@@ -23,5 +31,6 @@ btn.addEventListener("click",async function(){
     let cel=Math.ceil((data.main.temp-273.15).toFixed(2));
     temp.innerHTML=`${cel}°C`;
 
-    desc.innerHTML=`${data.weather[0].description}`
+    desc.innerHTML=`${data.weather[0].description}`;
+    wind.innerHTML=`Wind Speed: ${data.wind.speed} km/h`;
 })
